@@ -1,12 +1,12 @@
 # Site settings
 title: Meet Sanchit!
-description: Sanchit's(a.k.a. @inovizz) Portfolio
+description: Sanchit Balchandani - @inovizz
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Sanchit Balchandani
-user_description: <p>Hey! I'm a Software Engineer based out of Hyderabad and currently working at EPAM Systems as a Lead Software Engineer. I've been playing around with softwares and building applications from almost a decade now. I mostly code in Python and work on backend engineering projects. I've been working on domains like healthcare, ad-tech, infrastructure & automation. I've great inclination towards Infrastructure & SRE domain which is why I love playing around with tools like docker, jenkins & gitlab-ci. I'm also a co-organizer of some of the open source communities in Hyderabad like <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p>
+user_description: <p>Hey! I'm a Software Engineer based out of Hyderabad and currently working at EPAM Systems as a Lead Engineer. I've been playing around with softwares and building applications from quite sometime now. I mostly code in Python and work on backend engineering projects. I've worked on domains like healthcare, ad-tech, infrastructure & automation. I've great inclination towards Infrastructure & SRE domain which is why I like playing around with tools like docker, jenkins & gitlab-ci. I'm also a co-organizer of some of the open source communities in Hyderabad like <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p>
 user_title: Open Source Enthusiast
 email: sanchit@inovizz.com
 twitter_username: inovizz
