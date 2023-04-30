@@ -10,6 +10,40 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico"/>
+
+  <style>
+    /* New CSS styles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .tech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .tech img {
+      margin: 5px;
+    }
+
+    .user {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .talks-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .talks-list li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
   <body>
@@ -39,13 +73,13 @@
          <div class="user-details">
   <h1> About Me </h1>
   <img src="/assets/img/sanchit.png"/>
-  <p> <p>Hey! I'm a Software Engineer based out of Hyderabad and currently working at EPAM Systems as an Engineering Manager. I've been playing around with softwares and building applications from quite sometime now. I mostly code in Python and work on backend engineering projects. I've worked on domains like healthcare, ad-tech, infrastructure & automation. I've great inclination towards Cloud, Infrastructure & SRE domain. I'm also a co-organizer of some of the open source communities in Hyderabad like <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p> </p>
+  <p> <p>Sanchit is an experienced Software Engineer based in Hyderabad and currently working as an Engineering Manager at EPAM India. In his current role, Sanchit is responsible for leading the Python Discipline at EPAM India. With extensive experience developing backend engineering projects, he has worked across diverse domains such as healthcare, Ad Tech, Ecommerce, Infrastructure, and Automation. His primary areas of interest include Infrastructure, Cloud, and SRE. Furthermore, He is actively involved in promoting the growth of the software community in Hyderabad, as a co-organizer of open-source communities such as <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p> </p>
 </div>
 
       </section>
-      <section id="skills">
-        <center><h1>Skills</h1></center>
-<div class="user">
+<section id="skills">
+        <h1 class="section-title">Skills</h1>
+        <div class="user">
   <div class="tech">
     <h3>Backend</h3>
     <p> Python, Django, Flask, Redis, Celery, MySql, Mongo, NodeJs, Typescript</p>
@@ -75,11 +109,12 @@
   </div>
 </div>
 
-
+</div>
       </section>
-      <section id="talks">
+<section id="talks">
         <div class="user-details">
-<h1> Featured Talks</h1>
+          <h1 class="section-title">Featured Talks</h1>
+          <ul class="talks-list">
 <h3>2020</h3>
 <a href="https://www.youtube.com/watch?v=UHvNgimuEuk">Static Typing in Python at PyCon India 2020</a></br>
 <a href="https://www.youtube.com/watch?v=8yHzEUg_mX4&t=6s">Simplified Deployment into Cloud using Docker Desktop at OSCONF Hyderabad 2020</a></br>
@@ -91,6 +126,8 @@
 </ul>
 </div>
 
+</ul>
+        </div>
       </section>
         
       <footer class="footer">
