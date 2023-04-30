@@ -3,9 +3,159 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>Meet Sanchit!</title>
+  <meta name="description" content="Sanchit Balchandani - @inovizz">
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/jpg" href="{{ "/assets/img/favicon_io/favicon.ico" | prepend: site.baseurl }}"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico" />
+
+  <style>
+    /* New CSS styles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .tech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .tech img {
+      margin: 5px;
+    }
+
+    .user {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .talks-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .talks-list li {
+      margin-bottom: 10px;
+    }
+
+    .skills-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-category h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .skill-icons img {
+      width: auto;
+      height: 30px;
+    }
+
+    .about-me-section {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .about-me-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-me-image {
+      max-width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .about-me-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+
+    .user-details {
+      text-align: center;
+    }
+
+    .featured-talks-section {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .talks-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .talks-list li {
+      margin-bottom: 1rem;
+    }
+
+    .talks-list h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .talks-list a {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .talks-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>

@@ -6,17 +6,22 @@ description: Sanchit Balchandani - @inovizz
 
 # User settings
 username: Sanchit Balchandani
-user_description: <p>Hey! I'm a Software Engineer based out of Hyderabad and currently working at EPAM Systems as a Lead Engineer. I've been playing around with softwares and building applications from quite sometime now. I mostly code in Python and work on backend engineering projects. I've worked on domains like healthcare, ad-tech, infrastructure & automation. I've great inclination towards Infrastructure & SRE domain which is why I like playing around with tools like docker, jenkins & gitlab-ci. I'm also a co-organizer of some of the open source communities in Hyderabad like <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p>
+user_description:
+  <p>Sanchit is an experienced Software Engineer based in Hyderabad and currently working as an Engineering Manager
+  at EPAM India. In his current role, Sanchit is responsible for leading the Python Discipline at EPAM India. With
+  extensive experience developing backend engineering projects, he has worked across diverse domains such as
+  healthcare, Ad Tech, Ecommerce, Infrastructure, and Automation. His primary areas of interest include
+  Infrastructure, Cloud, and SRE. Furthermore, He is actively involved in promoting the growth of the software
+  community in Hyderabad, as a co-organizer of open-source communities such as <a
+  href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p>
 user_title: Open Source Enthusiast
 email: sanchit@inovizz.com
 twitter_username: inovizz
-github_username:  inovizz
+github_username: inovizz
 linkedin_username: inovizz
 
 # Google-analytics
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
-
-
+exclude: ["package.json", "src", "node_modules"]

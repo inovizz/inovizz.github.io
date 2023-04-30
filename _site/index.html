@@ -9,7 +9,7 @@
   <meta name="description" content="Sanchit Balchandani - @inovizz">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico"/>
+  <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico" />
 
   <style>
     /* New CSS styles */
@@ -43,91 +43,219 @@
     .talks-list li {
       margin-bottom: 10px;
     }
+
+    .skills-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-category h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .skill-icons img {
+      width: auto;
+      height: 30px;
+    }
+
+    .about-me-section {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .about-me-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-me-image {
+      max-width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .about-me-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+
+    .user-details {
+      text-align: center;
+    }
+
+    .featured-talks-section {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .talks-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .talks-list li {
+      margin-bottom: 1rem;
+    }
+
+    .talks-list h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .talks-list a {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .talks-list a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
-
   <body>
       <div id="particles-js">
   <div class="header">
-      <h1>
-        <span class="site-title">Sanchit Balchandani</span>
-        <span class="site-description">Open Source Enthusiast</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="mailto:hey@inovizz.com"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="https://twitter.com/inovizz" href="https://twitter.com/inovizz"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My LinkedIn" target="https://linkedin.com/in/inovizz" href="https://linkedin.com/in/inovizz"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="https://github.com/inovizz" href="https://github.com/inovizz"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="Resume" target="/resume.pdf" href="/resume.pdf"><i class="icon fa fa-resume-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" target="#about" href="#about" data-scroll>About Me</a>
-        <a class="link" target="#skills" href="#skills" data-scroll>Skills</a>
-        <a class="link" target="#talks" href="#talks" data-scroll>Talks</a>
-      </div>
+    <h1>
+      <span class="site-title">Sanchit Balchandani</span>
+      <span class="site-description">Open Source Enthusiast</span>
+    </h1>
+    <div class="header-icons">
+      <a aria-label="Send email" href="mailto:hey@inovizz.com"><i class="icon fa fa-envelope"></i></a>
+      <a aria-label="My Twitter" target="https://twitter.com/inovizz" href="https://twitter.com/inovizz"><i
+          class="icon fa fa-twitter" aria-hidden="true"></i></a>
+      <a aria-label="My LinkedIn" target="https://linkedin.com/in/inovizz" href="https://linkedin.com/in/inovizz"><i
+          class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+      <a aria-label="My Github" target="https://github.com/inovizz" href="https://github.com/inovizz"><i
+          class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      <a aria-label="Resume" target="/resume.pdf" href="/resume.pdf"><i class="icon fa fa-resume-alt"
+          aria-hidden="true"></i></a>
+    </div>
+    <div class="header-links">
+      <a class="link" target="#about" href="#about" data-scroll>About Me</a>
+      <a class="link" target="#skills" href="#skills" data-scroll>Skills</a>
+      <a class="link" target="#talks" href="#talks" data-scroll>Talks</a>
+    </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
-
       <section id="about">
-         <div class="user-details">
-  <h1> About Me </h1>
-  <img src="/assets/img/sanchit.png"/>
-  <p> <p>Sanchit is an experienced Software Engineer based in Hyderabad and currently working as an Engineering Manager at EPAM India. In his current role, Sanchit is responsible for leading the Python Discipline at EPAM India. With extensive experience developing backend engineering projects, he has worked across diverse domains such as healthcare, Ad Tech, Ecommerce, Infrastructure, and Automation. His primary areas of interest include Infrastructure, Cloud, and SRE. Furthermore, He is actively involved in promoting the growth of the software community in Hyderabad, as a co-organizer of open-source communities such as <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p> </p>
+        <div class="about-me-section user-details">
+  <h1 class="section-title">About Me</h1>
+  <div class="about-me-content">
+    <img class="about-me-image" src="/assets/img/sanchit.png" alt="Sanchit" />
+    <p class="about-me-description"><p>Sanchit is an experienced Software Engineer based in Hyderabad and currently working as an Engineering Manager at EPAM India. In his current role, Sanchit is responsible for leading the Python Discipline at EPAM India. With extensive experience developing backend engineering projects, he has worked across diverse domains such as healthcare, Ad Tech, Ecommerce, Infrastructure, and Automation. His primary areas of interest include Infrastructure, Cloud, and SRE. Furthermore, He is actively involved in promoting the growth of the software community in Hyderabad, as a co-organizer of open-source communities such as <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p></p>
+  </div>
 </div>
-
       </section>
-<section id="skills">
-        <h1 class="section-title">Skills</h1>
-        <div class="user">
-  <div class="tech">
-    <h3>Backend</h3>
-    <p> Python, Django, Flask, Redis, Celery, MySql, Mongo, NodeJs, Typescript</p>
-    <img src="/assets/img/python.png" width="30" height="30"/>
-    <img src="/assets/img/django.png" width="60" height="30"/>
-    <img src="/assets/img/flask.png" width="40" height="30"/>
-    <img src="/assets/img/nodejs.png" width="40" height="25"/>
-    <img src="/assets/img/mongodb.png" width="80" height="30"/>
-  </div>
-  <div class="tech">
-    <h3>Frontend</h3>
-    <p>JavaScript, ReactJS(Novice), HTML and JQuery</p>
-    <img src="/assets/img/html.png" width="35" height="30"/>
-    <img src="/assets/img/js.png" width="30" height="30"/>
-    <img src="/assets/img/react.png" width="40" height="30"/>
-  </div>
-  <div class="tech">
-    <h3>DevOps</h3>
-    <p>Docker, Terraform, AWS, Jenkins, Gitlab-CI, Git, Gitlab, Azure DevOps</p>
-    <div>
-    <img src="/assets/img/docker.png" width="90" height="30"/>
-    <img src="/assets/img/aws.png" width="90" height="30"/>
-    <img src="/assets/img/tf.png" width="90" height="30"/>
-    <img src="/assets/img/jenkins.png" width="50" height="30"/>
-    <img src="/assets/img/git.png" width="60" height="30"/>
+      <section id="skills">
+        <div class="skills-section">
+  <h1 class="section-title">Skills</h1>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3>Backend</h3>
+      <p>Python, Django, Flask, Redis, Celery, MySql, Mongo, NodeJs, Typescript</p>
+      <div class="skill-icons">
+        <img src="/assets/img/python.png" width="30" height="30" />
+        <img src="/assets/img/django.png" width="60" height="30" />
+        <img src="/assets/img/flask.png" width="40" height="30" />
+        <img src="/assets/img/nodejs.png" width="40" height="25" />
+        <img src="/assets/img/mongodb.png" width="80" height="30" />
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Frontend</h3>
+      <p>JavaScript, ReactJS(Novice), HTML and JQuery</p>
+      <div class="skill-icons">
+        <img src="/assets/img/html.png" width="35" height="30" />
+        <img src="/assets/img/js.png" width="30" height="30" />
+        <img src="/assets/img/react.png" width="40" height="30" />
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>DevOps</h3>
+      <p>Docker, Terraform, AWS, Jenkins, Gitlab-CI, Git, Gitlab, Azure DevOps</p>
+      <div class="skill-icons">
+        <img src="/assets/img/docker.png" width="90" height="30" />
+        <img src="/assets/img/aws.png" width="90" height="30" />
+        <img src="/assets/img/tf.png" width="90" height="30" />
+        <img src="/assets/img/jenkins.png" width="50" height="30" />
+        <img src="/assets/img/git.png" width="60" height="30" />
+      </div>
     </div>
   </div>
 </div>
-
-</div>
       </section>
-<section id="talks">
-        <div class="user-details">
-          <h1 class="section-title">Featured Talks</h1>
-          <ul class="talks-list">
-<h3>2020</h3>
-<a href="https://www.youtube.com/watch?v=UHvNgimuEuk">Static Typing in Python at PyCon India 2020</a></br>
-<a href="https://www.youtube.com/watch?v=8yHzEUg_mX4&t=6s">Simplified Deployment into Cloud using Docker Desktop at OSCONF Hyderabad 2020</a></br>
-<a href="https://github.com/inovizz/python-for-devops">Python for DevOps Workshop at EPAM India</a></br>
-<a href="https://www.meetup.com/HydPyGroup/events/267936005/">Static Typing in Python at VZTecConvene, Jan 2020</a></br>
-<h3>2019</h3>
-<a href="https://pyconf.hydpy.org/2019/index.html#schedule-section">Containarized Development using Docker at PyConf Hyderabad 2019</a></br>
-<a href="https://in.pycon.org/cfp/workshops-2019/proposals/demystifying-docker-for-devs~e9WPb/">Demystifying Docker for Devs at PyCon India 2019</a></br>
-</ul>
+      <section id="talks">
+        <div class="user-details featured-talks-section">
+    <h1 class="section-title">Featured Talks</h1>
+    <ul class="talks-list">
+        <li>
+            <h3>2020</h3>
+            <a href="https://www.youtube.com/watch?v=UHvNgimuEuk">Static Typing in Python at PyCon India 2020</a>
+            <a href="https://www.youtube.com/watch?v=8yHzEUg_mX4&t=6s">Simplified Deployment into Cloud using Docker
+                Desktop at OSCONF Hyderabad 2020</a>
+            <a href="https://github.com/inovizz/python-for-devops">Python for DevOps Workshop at EPAM India</a>
+            <a href="https://www.meetup.com/HydPyGroup/events/267936005/">Static Typing in Python at VZTecConvene, Jan
+                2020</a>
+        </li>
+        <li>
+            <h3>2019</h3>
+            <a href="https://pyconf.hydpy.org/2019/index.html#schedule-section">Containarized Development using Docker
+                at PyConf Hyderabad 2019</a>
+            <a href="https://in.pycon.org/cfp/workshops-2019/proposals/demystifying-docker-for-devs~e9WPb/">Demystifying
+                Docker for Devs at PyCon India 2019</a>
+        </li>
+    </ul>
 </div>
-
-</ul>
-        </div>
       </section>
         
       <footer class="footer">

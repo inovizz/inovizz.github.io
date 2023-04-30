@@ -1,2 +1,9 @@
 sftp-config.json
-./jekyll-cache/*
+_site/
+Gemfile.lock
+node_modules/
+.yarn/
+.yarnrc.yml
+yarn.lock
+yarn-error.log
+.jekyll-cache/
