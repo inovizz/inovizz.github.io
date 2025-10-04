@@ -2,74 +2,141 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Sanchit Balchandani, GenAI, Python, FastAPI, Django, Microservices, AWS, Docker, Kubernetes, EPAM, Aramco">
+  <meta name="author" content="Sanchit Balchandani">
+  <meta property="og:title" content="Sanchit Balchandani - Engineering Manager @ EPAM India">
+  <meta property="og:description" content="Result-oriented Application Developer with 15+ years of experience in GenAI applications, Python, and microservices.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@inovizz">
 
-  <title>Meet Sanchit!</title>
-  <meta name="description" content="Sanchit Balchandani - @inovizz">
+  <title>Sanchit Balchandani - Engineering Manager @ EPAM India</title>
+  <meta name="description" content="Result-oriented Software Developer with 15+ years of experience in GenAI applications, Python, and microservices. Engineering Manager at EPAM India leading 260+ people.">
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico" />
 
   <style>
-    /* New CSS styles */
+    /* Modern CSS styles */
+    
+    /* Global styles */
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --accent-color: #3b82f6;
+      --text-color: #1f2937;
+      --text-light: #6b7280;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --border-color: #e5e7eb;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --border-radius: 12px;
+      --border-radius-lg: 16px;
+    }
+
+    /* Typography improvements */
     .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
+      color: var(--text-color);
+      position: relative;
     }
 
-    .tech {
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      border-radius: 2px;
+    }
+
+    /* About Me Section */
+    .about-me-section {
+      background: var(--bg-white);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 3rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      border: 1px solid var(--border-color);
+    }
+
+    .about-me-content {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .tech img {
-      margin: 5px;
-    }
-
-    .user {
-      display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 3rem;
       flex-wrap: wrap;
     }
 
-    .talks-list {
-      padding-left: 0;
-      list-style-type: none;
+    .about-me-image {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      box-shadow: var(--shadow-lg);
+      flex-shrink: 0;
+      border: 4px solid var(--bg-light);
+      object-fit: cover;
+      object-position: center;
     }
 
-    .talks-list li {
-      margin-bottom: 10px;
+    .about-me-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 700px;
+      color: var(--text-color);
     }
 
-    .skills-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      text-align: center;
+    .about-me-description p {
       margin-bottom: 1.5rem;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
     }
 
     .skill-category {
-      background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: var(--bg-white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
     }
 
     .skill-category h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .skill-category p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
     }
 
     .skill-icons {
@@ -81,81 +148,281 @@
 
     .skill-icons img {
       width: auto;
-      height: 30px;
+      height: 32px;
+      filter: grayscale(20%);
+      transition: filter 0.2s ease;
     }
 
-    .about-me-section {
-      background-color: #f8f9fa;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin: 2rem 0;
+    .skill-icons img:hover {
+      filter: grayscale(0%);
     }
 
-    .about-me-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+    .skill-badge {
+      display: inline-block;
+      background: var(--bg-light);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin: 0.25rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     }
 
-    .about-me-image {
-      max-width: 250px;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      flex-shrink: 0;
+    .skill-badge:hover {
+      transform: translateY(-2px);
+      background: var(--bg-white);
+      box-shadow: var(--shadow);
     }
 
-    .about-me-description {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-
-    .user-details {
-      text-align: center;
-    }
-
+    /* Talks Section */
     .featured-talks-section {
-      background-color: #f8f9fa;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin: 2rem 0;
+      background: var(--bg-white);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 3rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      border: 1px solid var(--border-color);
     }
 
     .talks-list {
       padding-left: 0;
       list-style-type: none;
+      text-align: left;
     }
 
     .talks-list li {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: var(--bg-light);
+      border-radius: var(--border-radius);
+      border-left: 4px solid var(--primary-color);
     }
 
     .talks-list h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-color);
     }
 
     .talks-list a {
       display: block;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.6;
-      color: #007bff;
+      color: var(--primary-color);
       text-decoration: none;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s ease;
     }
 
     .talks-list a:hover {
+      color: var(--secondary-color);
       text-decoration: underline;
+    }
+
+    /* Articles Section - Enhanced and Prominent */
+    .articles-section {
+      background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 4rem 3rem;
+      margin: 4rem auto;
+      max-width: 1400px;
+      border: 2px solid var(--primary-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .articles-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+    }
+
+    .articles-section .section-title {
+      font-size: 2.8rem;
+      margin-bottom: 3.5rem;
+      color: var(--primary-color);
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 3rem;
+      text-align: left;
+    }
+
+    .article-category {
+      background: var(--bg-white);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .article-category:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+    }
+
+    .article-category::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .article-category h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-category h3::before {
+      content: '📝';
+      font-size: 1.2rem;
+    }
+
+    .articles-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .articles-list li {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .articles-list li::before {
+      content: '→';
+      position: absolute;
+      left: -1.5rem;
+      top: 0.75rem;
+      color: var(--primary-color);
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .articles-list li:hover::before {
+      transform: translateX(4px);
+    }
+
+    .articles-list a {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      border-left: 3px solid transparent;
+      background: linear-gradient(135deg, var(--bg-light) 0%, rgba(248, 250, 252, 0.8) 100%);
+    }
+
+    .articles-list a:hover {
+      background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+      color: var(--primary-color);
+      box-shadow: var(--shadow);
+      border-left-color: var(--primary-color);
+      transform: translateX(8px);
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .about-me-section,
+      .featured-talks-section {
+        padding: 2rem 1.5rem;
+        margin: 2rem 1rem;
+      }
+
+      .articles-section {
+        padding: 3rem 1.5rem;
+        margin: 3rem 1rem;
+      }
+
+      .skills-section {
+        padding: 2rem 1rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .article-category {
+        padding: 2rem;
+      }
+
+      .articles-section .section-title {
+        font-size: 2.2rem;
+      }
+
+      .about-me-content {
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .about-me-image {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+
+      .about-me-section,
+      .featured-talks-section {
+        padding: 1.5rem 1rem;
+      }
+
+      .articles-section {
+        padding: 2.5rem 1rem;
+      }
+
+      .articles-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .skill-category,
+      .article-category {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Utility classes */
+    .user-details {
+      text-align: center;
     }
   </style>
 </head>

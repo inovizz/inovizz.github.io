@@ -7,8 +7,11 @@ description: Sanchit Balchandani - @inovizz
 # User settings
 username: Sanchit Balchandani
 user_description:
-  <p>Sanchit, a skilled software engineer from Hyderabad, currently holds the position of Engineering Manager at EPAM India, where he leads the Python Discipline. With an impressive background in backend engineering, he has made significant contributions across various sectors such as healthcare, Ad Tech, E-commerce, Infrastructure, and Automation. Sanchit is particularly passionate about Infrastructure, Cloud, and SRE, while also being committed to fostering a positive work culture, empathetic people management, and supporting diversity.</p>
-user_title: Open Source Enthusiast
+  <p>Result-oriented Software Developer with over 15 years of extensive experience in application development, including 2+ years specializing in cutting-edge Generative AI applications. Demonstrated expertise in Python, Node.js, object-oriented programming, microservices architecture, and RESTful backend development using modern frameworks such as FastAPI, Django, Flask, and Django REST Framework.</p>
+  <p>Currently working at EPAM India (since 2019) as an Engineering Manager, leading the Python Discipline and managing a dynamic team of 260+ professionals. From a technology perspective, I serve as a GenAI Architect, designing and delivering end-to-end AI-driven solutions across multiple business streams, focusing on intelligent automation and enterprise-scale AI adoption.</p>
+  <p>Proficient in DevOps technologies, including Docker (containerization), Kubernetes (orchestration), AWS Cloud (scalable infrastructure), Jenkins (CI/CD), and Terraform (Infrastructure as Code), enabling efficient and resilient software delivery pipelines.</p>
+  <p>Beyond work, I am an active community leader and core member of the Hyderabad Python User Group since 2016, contributing to the growth of the Python ecosystem in India. I’ve also held leadership roles such as Chair, PyCon India 2023 and PyCon Hyderabad 2022, and Co-organizer for PyCon India 2021 & 2018, successfully organizing large-scale developer conferences that foster knowledge sharing and collaboration.</p>
+user_title: Engineering Manager @ EPAM India
 email: sanchit@inovizz.com
 twitter_username: inovizz
 github_username: inovizz

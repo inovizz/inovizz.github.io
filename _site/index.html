@@ -4,74 +4,141 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Sanchit Balchandani, GenAI, Python, FastAPI, Django, Microservices, AWS, Docker, Kubernetes, EPAM, Aramco">
+  <meta name="author" content="Sanchit Balchandani">
+  <meta property="og:title" content="Sanchit Balchandani - Engineering Manager @ EPAM India">
+  <meta property="og:description" content="Result-oriented Application Developer with 15+ years of experience in GenAI applications, Python, and microservices.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@inovizz">
 
-  <title>Meet Sanchit!</title>
-  <meta name="description" content="Sanchit Balchandani - @inovizz">
+  <title>Sanchit Balchandani - Engineering Manager @ EPAM India</title>
+  <meta name="description" content="Result-oriented Software Developer with 15+ years of experience in GenAI applications, Python, and microservices. Engineering Manager at EPAM India leading 260+ people.">
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon_io/favicon.ico" />
 
   <style>
-    /* New CSS styles */
+    /* Modern CSS styles */
+    
+    /* Global styles */
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --accent-color: #3b82f6;
+      --text-color: #1f2937;
+      --text-light: #6b7280;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --border-color: #e5e7eb;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --border-radius: 12px;
+      --border-radius-lg: 16px;
+    }
+
+    /* Typography improvements */
     .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
+      color: var(--text-color);
+      position: relative;
     }
 
-    .tech {
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      border-radius: 2px;
+    }
+
+    /* About Me Section */
+    .about-me-section {
+      background: var(--bg-white);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 3rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      border: 1px solid var(--border-color);
+    }
+
+    .about-me-content {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .tech img {
-      margin: 5px;
-    }
-
-    .user {
-      display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 3rem;
       flex-wrap: wrap;
     }
 
-    .talks-list {
-      padding-left: 0;
-      list-style-type: none;
+    .about-me-image {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      box-shadow: var(--shadow-lg);
+      flex-shrink: 0;
+      border: 4px solid var(--bg-light);
+      object-fit: cover;
+      object-position: center;
     }
 
-    .talks-list li {
-      margin-bottom: 10px;
+    .about-me-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 700px;
+      color: var(--text-color);
     }
 
-    .skills-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      text-align: center;
+    .about-me-description p {
       margin-bottom: 1.5rem;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
     }
 
     .skill-category {
-      background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: var(--bg-white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
     }
 
     .skill-category h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .skill-category p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
     }
 
     .skill-icons {
@@ -83,81 +150,281 @@
 
     .skill-icons img {
       width: auto;
-      height: 30px;
+      height: 32px;
+      filter: grayscale(20%);
+      transition: filter 0.2s ease;
     }
 
-    .about-me-section {
-      background-color: #f8f9fa;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin: 2rem 0;
+    .skill-icons img:hover {
+      filter: grayscale(0%);
     }
 
-    .about-me-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+    .skill-badge {
+      display: inline-block;
+      background: var(--bg-light);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin: 0.25rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     }
 
-    .about-me-image {
-      max-width: 250px;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      flex-shrink: 0;
+    .skill-badge:hover {
+      transform: translateY(-2px);
+      background: var(--bg-white);
+      box-shadow: var(--shadow);
     }
 
-    .about-me-description {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-
-    .user-details {
-      text-align: center;
-    }
-
+    /* Talks Section */
     .featured-talks-section {
-      background-color: #f8f9fa;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin: 2rem 0;
+      background: var(--bg-white);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 3rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      border: 1px solid var(--border-color);
     }
 
     .talks-list {
       padding-left: 0;
       list-style-type: none;
+      text-align: left;
     }
 
     .talks-list li {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: var(--bg-light);
+      border-radius: var(--border-radius);
+      border-left: 4px solid var(--primary-color);
     }
 
     .talks-list h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-color);
     }
 
     .talks-list a {
       display: block;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.6;
-      color: #007bff;
+      color: var(--primary-color);
       text-decoration: none;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s ease;
     }
 
     .talks-list a:hover {
+      color: var(--secondary-color);
       text-decoration: underline;
+    }
+
+    /* Articles Section - Enhanced and Prominent */
+    .articles-section {
+      background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 4rem 3rem;
+      margin: 4rem auto;
+      max-width: 1400px;
+      border: 2px solid var(--primary-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .articles-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+    }
+
+    .articles-section .section-title {
+      font-size: 2.8rem;
+      margin-bottom: 3.5rem;
+      color: var(--primary-color);
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 3rem;
+      text-align: left;
+    }
+
+    .article-category {
+      background: var(--bg-white);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .article-category:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+    }
+
+    .article-category::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .article-category h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-category h3::before {
+      content: '📝';
+      font-size: 1.2rem;
+    }
+
+    .articles-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .articles-list li {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .articles-list li::before {
+      content: '→';
+      position: absolute;
+      left: -1.5rem;
+      top: 0.75rem;
+      color: var(--primary-color);
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .articles-list li:hover::before {
+      transform: translateX(4px);
+    }
+
+    .articles-list a {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      border-left: 3px solid transparent;
+      background: linear-gradient(135deg, var(--bg-light) 0%, rgba(248, 250, 252, 0.8) 100%);
+    }
+
+    .articles-list a:hover {
+      background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+      color: var(--primary-color);
+      box-shadow: var(--shadow);
+      border-left-color: var(--primary-color);
+      transform: translateX(8px);
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .about-me-section,
+      .featured-talks-section {
+        padding: 2rem 1.5rem;
+        margin: 2rem 1rem;
+      }
+
+      .articles-section {
+        padding: 3rem 1.5rem;
+        margin: 3rem 1rem;
+      }
+
+      .skills-section {
+        padding: 2rem 1rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .article-category {
+        padding: 2rem;
+      }
+
+      .articles-section .section-title {
+        font-size: 2.2rem;
+      }
+
+      .about-me-content {
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .about-me-image {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+
+      .about-me-section,
+      .featured-talks-section {
+        padding: 1.5rem 1rem;
+      }
+
+      .articles-section {
+        padding: 2.5rem 1rem;
+      }
+
+      .articles-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .skill-category,
+      .article-category {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Utility classes */
+    .user-details {
+      text-align: center;
     }
   </style>
 </head>
@@ -166,7 +433,7 @@
   <div class="header">
     <h1>
       <span class="site-title">Sanchit Balchandani</span>
-      <span class="site-description">Open Source Enthusiast</span>
+      <span class="site-description">Engineering Manager @ EPAM India</span>
     </h1>
     <div class="header-icons">
       <a aria-label="Send email" href="mailto:hey@inovizz.com"><i class="icon fa fa-envelope"></i></a>
@@ -176,12 +443,11 @@
           class="icon fa fa-linkedin" aria-hidden="true"></i></a>
       <a aria-label="My Github" target="https://github.com/inovizz" href="https://github.com/inovizz"><i
           class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      <a aria-label="Resume" target="/resume.pdf" href="/resume.pdf"><i class="icon fa fa-resume-alt"
-          aria-hidden="true"></i></a>
     </div>
     <div class="header-links">
       <a class="link" target="#about" href="#about" data-scroll>About Me</a>
       <a class="link" target="#skills" href="#skills" data-scroll>Skills</a>
+      <a class="link" target="#articles" href="#articles" data-scroll>Articles</a>
       <a class="link" target="#talks" href="#talks" data-scroll>Talks</a>
     </div>
   </div>
@@ -191,8 +457,8 @@
         <div class="about-me-section user-details">
   <h1 class="section-title">About Me</h1>
   <div class="about-me-content">
-    <img class="about-me-image" src="/assets/img/sanchit.png" alt="Sanchit" />
-    <p class="about-me-description"><p>Sanchit is an experienced Software Engineer based in Hyderabad and currently working as an Engineering Manager at EPAM India. In his current role, Sanchit is responsible for leading the Python Discipline at EPAM India. With extensive experience developing backend engineering projects, he has worked across diverse domains such as healthcare, Ad Tech, Ecommerce, Infrastructure, and Automation. His primary areas of interest include Infrastructure, Cloud, and SRE. Furthermore, He is actively involved in promoting the growth of the software community in Hyderabad, as a co-organizer of open-source communities such as <a href="https://hydpy.org/">HydPy</a> & <a href="https://dsughyd.org">DSUGHyd</a>.</p></p>
+    <img class="about-me-image" src="/assets/img/sanchit-2025.png" alt="Sanchit Balchandani" />
+    <p class="about-me-description"><p>Result-oriented Software Developer with 15+ years of extensive experience in application development, including 2 years specializing in cutting-edge GenAI applications. Deep expertise in Python, Node.js, object-oriented programming, microservices architecture, and RESTful backend development using modern frameworks like FastAPI, Django, Flask, and Django REST Framework.</p> <p>Working at EPAM India since 2019 as an Engineering Manager, currently leading the Python Discipline for EPAM India and successfully managing a dynamic team of more than 260 talented professionals. From a technology perspective, currently serving as a GenAI Architect, designing and delivering comprehensive end-to-end solutions across three distinct business streams, focusing on innovative AI-driven applications and intelligent automation systems.</p> <p>Additionally, possess strong expertise in DevOps technologies including Docker for containerization, Kubernetes for orchestration, AWS cloud services for scalable infrastructure, Jenkins for continuous integration/deployment, and Terraform for infrastructure as code, enabling robust and efficient software delivery pipelines.</p> <p>Active community leader and dedicated core member of the Hyderabad Python User Group since 2016, contributing to the growth of the Python ecosystem in India. Notable leadership roles include serving as Chair for PyCon India 2023 and PyCon Hyderabad 2022, and Co-organizer for PyCon India in 2021 and 2018, successfully organizing large-scale developer conferences that foster knowledge sharing and community building.</p></p>
   </div>
 </div>
       </section>
@@ -201,43 +467,135 @@
   <h1 class="section-title">Skills</h1>
   <div class="skills-grid">
     <div class="skill-category">
-      <h3>Backend</h3>
-      <p>Python, Django, Flask, Redis, Celery, MySql, Mongo, NodeJs, Typescript</p>
+      <h3>GenAI & AI/ML</h3>
       <div class="skill-icons">
-        <img src="/assets/img/python.png" width="30" height="30" />
-        <img src="/assets/img/django.png" width="60" height="30" />
-        <img src="/assets/img/flask.png" width="40" height="30" />
-        <img src="/assets/img/nodejs.png" width="40" height="25" />
-        <img src="/assets/img/mongodb.png" width="80" height="30" />
+        <span class="skill-badge">🦜⛓️ LangChain</span>
+        <span class="skill-badge">📊 LangGraph</span>
+        <span class="skill-badge">🔍 RAG</span>
+        <span class="skill-badge">🤖 Agents</span>
+        <span class="skill-badge">🧠 DeepAgents</span>
+        <span class="skill-badge">✍️ Prompt Eng</span>
+        <span class="skill-badge">🔌 MCP</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3>Frontend</h3>
-      <p>JavaScript, ReactJS(Novice), HTML and JQuery</p>
+      <h3>Backend Development</h3>
       <div class="skill-icons">
-        <img src="/assets/img/html.png" width="35" height="30" />
-        <img src="/assets/img/js.png" width="30" height="30" />
-        <img src="/assets/img/react.png" width="40" height="30" />
+        <span class="skill-badge">🐍 Python</span>
+        <span class="skill-badge">⚡ FastAPI</span>
+        <span class="skill-badge">🎸 Django</span>
+        <span class="skill-badge">🌶️ Flask</span>
+        <span class="skill-badge">📡 DRF</span>
+        <span class="skill-badge">💚 Node.js</span>
+        <span class="skill-badge">📘 TypeScript</span>
+        <span class="skill-badge">🔧 Microservices</span>
+        <span class="skill-badge">🌐 REST APIs</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3>DevOps</h3>
-      <p>Docker, Terraform, AWS, Jenkins, Gitlab-CI, Git, Gitlab, Azure DevOps</p>
+      <h3>Database & Storage</h3>
       <div class="skill-icons">
-        <img src="/assets/img/docker.png" width="90" height="30" />
-        <img src="/assets/img/aws.png" width="90" height="30" />
-        <img src="/assets/img/tf.png" width="90" height="30" />
-        <img src="/assets/img/jenkins.png" width="50" height="30" />
-        <img src="/assets/img/git.png" width="60" height="30" />
+        <span class="skill-badge">🐘 PostgreSQL</span>
+        <span class="skill-badge">🐬 MySQL</span>
+        <span class="skill-badge">🍃 MongoDB</span>
+        <span class="skill-badge">🗄️ Redis</span>
+        <span class="skill-badge">🔗 Neo4j</span>
+        <span class="skill-badge">🧮 PGVector</span>
+        <span class="skill-badge">📊 Vector DBs</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Cloud & DevOps</h3>
+      <div class="skill-icons">
+        <span class="skill-badge">☁️ AWS</span>
+        <span class="skill-badge">🐳 Docker</span>
+        <span class="skill-badge">⚓ Kubernetes</span>
+        <span class="skill-badge">🏗️ Terraform</span>
+        <span class="skill-badge">🤖 Jenkins</span>
+        <span class="skill-badge">🦊 GitLab CI</span>
+        <span class="skill-badge">🌊 Prefect</span>
+        <span class="skill-badge">🔧 SRE</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Frontend & Tools</h3>
+      <div class="skill-icons">
+        <span class="skill-badge">⚛️ React</span>
+        <span class="skill-badge">📜 JavaScript</span>
+        <span class="skill-badge">🌐 HTML5</span>
+        <span class="skill-badge">🎨 CSS3</span>
+        <span class="skill-badge">🅰️ Angular</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Blockchain</h3>
+      <div class="skill-icons">
+        <span class="skill-badge">💎 Ethereum</span>
+        <span class="skill-badge">📝 Solidity</span>
+        <span class="skill-badge">🔧 Truffle</span>
+        <span class="skill-badge">⚡ Geth</span>
+        <span class="skill-badge">📁 IPFS</span>
+        <span class="skill-badge">🏢 BlockApps</span>
+        <span class="skill-badge">🏆 Top 5% SE</span>
       </div>
     </div>
   </div>
+</div>
+      </section>
+      <section id="articles">
+        <div class="user-details articles-section">
+    <h1 class="section-title">Articles & Publications</h1>
+    <div class="articles-grid">
+        <div class="article-category">
+            <h3>Leadership & Culture</h3>
+            <ul class="articles-list">
+                <li>
+                    <a href="https://www.linkedin.com/pulse/building-culture-psychological-safety-sanchit-balchandani-iruhc/?trackingId=7%2Bt5y9eoSy%2BbbZh3hfO59g%3D%3D" target="_blank">
+                        Building Culture of Psychological Safety
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/pulse/building-strong-bonds-your-engineering-teams-sanchit-balchandani/" target="_blank">
+                        Building Strong Bonds in Your Engineering Teams
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.epam.com/careers/blog/empathy-an-essential-skill-for-the-modern-engineer?utm_source=linkedin&utm_medium=social&utm_campaign=ta&utm_term=blog&utm_content=india-empathy&sf152401930=1" target="_blank">
+                        Empathy: An Essential Skill for the Modern Engineer
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="article-category">
+            <h3>Technical & Cloud</h3>
+            <ul class="articles-list">
+                <li>
+                    <a href="https://www.linkedin.com/pulse/harnessing-aws-glue-high-volume-json-processing-sanchit-balchandani/" target="_blank">
+                        Harnessing AWS Glue for High-Volume JSON Processing
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dev.to/epam_india_python/how-to-migrate-python-2-projects-to-3-some-useful-tips-1kid" target="_blank">
+                        How to Migrate Python 2 Projects to 3: Some Useful Tips
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
       </section>
       <section id="talks">
         <div class="user-details featured-talks-section">
     <h1 class="section-title">Featured Talks</h1>
     <ul class="talks-list">
+        <li>
+            <h3>2025</h3>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7375126391287291904/">Deep Agents Talk at EPAM.AI Conference</a>
+        </li>
+        <li>
+            <h3>2024</h3>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7251579437551398915/">RAG Workshop at OpenSource Conference</a>
+        </li>
         <li>
             <h3>2020</h3>
             <a href="https://www.youtube.com/watch?v=UHvNgimuEuk">Static Typing in Python at PyCon India 2020</a>
